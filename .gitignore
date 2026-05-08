@@ -31,8 +31,9 @@ dist-ssr
 server/.env
 server/.env.local
 
-# Documentation files (exclude all .md files)
+# Documentation files (exclude all .md files except README.md)
 *.md
+!README.md
 
 # Sensitive configuration
 *credentials*
