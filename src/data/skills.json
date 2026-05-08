@@ -1,0 +1,104 @@
+{
+  "skills": [
+    {
+      "category": "UI/UX",
+      "items": [
+        "User Interface Design",
+        "User Experience Research",
+        "Wireframing & Prototyping",
+        "Design Systems",
+        "Accessibility (WCAG AA)",
+        "Responsive Design",
+        "Information Architecture",
+        "User Testing",
+        "Figma & Design Tools",
+        "Visual Hierarchy"
+      ]
+    },
+    {
+      "category": "Frontend",
+      "items": [
+        "React & React Hooks",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "HTML5 & CSS3",
+        "CSS Animations & Transitions",
+        "Responsive Web Design",
+        "Performance Optimization",
+        "State Management (Redux, Context)",
+        "Component Libraries",
+        "Build Tools (Vite, Webpack)"
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        "Node.js & Express",
+        "RESTful API Design",
+        "Database Design & Modeling",
+        "Authentication & Authorization",
+        "Server Security Best Practices",
+        "API Documentation",
+        "Error Handling & Logging",
+        "Middleware Development",
+        "Session Management",
+        "Server Deployment"
+      ]
+    },
+    {
+      "category": "Database",
+      "items": [
+        "MongoDB & Mongoose",
+        "Schema Design",
+        "Query Optimization",
+        "Data Modeling",
+        "MongoDB Atlas",
+        "Aggregation Pipelines",
+        "Indexing Strategies",
+        "Database Security",
+        "Backup & Recovery",
+        "Performance Monitoring"
+      ]
+    },
+    {
+      "category": "AI & Automation",
+      "items": [
+        "AI-Assisted Development",
+        "Workflow Optimization",
+        "Code Generation & Review",
+        "Design Exploration",
+        "Process Automation",
+        "Natural Language Processing",
+        "Machine Learning Integration",
+        "AI Tool Integration",
+        "Prompt Engineering",
+        "AI Ethics & Best Practices"
+      ]
+    },
+    {
+      "category": "Tools & Workflow",
+      "items": [
+        "Git & Version Control",
+        "GitHub/GitLab",
+        "CI/CD Pipelines",
+        "Testing Frameworks (Jest, Cypress)",
+        "Project Management",
+        "Code Review Processes",
+        "Documentation",
+        "Agile Methodologies",
+        "Docker & Containerization",
+        "Cloud Deployment (Vercel, Netlify, Heroku)"
+      ]
+    }
+  ],
+  "techStack": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "AI Tools",
+    "CSS3",
+    "Git"
+  ]
+}

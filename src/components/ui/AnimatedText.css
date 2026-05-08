@@ -1,0 +1,43 @@
+.animated-text {
+  display: inline-block;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity, clip-path;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animated-text {
+    transition-duration: 0.1s;
+  }
+}
+
+/* Clip-path reveal animation */
+.animated-text.clip-path-reveal {
+  clip-path: inset(0 100% 0 0);
+}
+
+.animated-text.clip-path-reveal.visible {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Fade-in animation */
+.animated-text.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.animated-text.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide-up animation */
+.animated-text.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animated-text.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

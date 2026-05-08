@@ -1,0 +1,100 @@
+{
+  "workflow": [
+    {
+      "name": "Research",
+      "description": "Understanding user needs, business requirements, and technical constraints through stakeholder interviews and market analysis",
+      "aiAssisted": false
+    },
+    {
+      "name": "Wireframes",
+      "description": "Creating low-fidelity layouts and user flow diagrams to establish information architecture and navigation patterns",
+      "aiAssisted": false
+    },
+    {
+      "name": "AI-Assisted Layout",
+      "description": "Exploring design alternatives and generating layout variations using AI tools to accelerate the ideation process",
+      "aiAssisted": true
+    },
+    {
+      "name": "UI Design",
+      "description": "Crafting pixel-perfect interfaces with design systems, visual hierarchy, and brand consistency",
+      "aiAssisted": false
+    },
+    {
+      "name": "Frontend Development",
+      "description": "Building responsive, interactive user interfaces with modern frameworks, focusing on performance and accessibility",
+      "aiAssisted": true
+    },
+    {
+      "name": "Backend Development",
+      "description": "Creating robust APIs, database schemas, and server-side logic with security and scalability in mind",
+      "aiAssisted": true
+    },
+    {
+      "name": "Testing",
+      "description": "Comprehensive testing including unit tests, integration tests, and user acceptance testing to ensure quality",
+      "aiAssisted": false
+    },
+    {
+      "name": "Deploy",
+      "description": "Production deployment with monitoring, analytics, and performance optimization for reliable operation",
+      "aiAssisted": false
+    }
+  ],
+  "philosophy": {
+    "title": "AI as a Creative Partner",
+    "principles": [
+      {
+        "title": "Enhanced, Not Replaced",
+        "description": "AI tools amplify human creativity and efficiency rather than replacing human judgment and decision-making."
+      },
+      {
+        "title": "Strategic Application",
+        "description": "AI is strategically applied where it adds the most value: layout exploration, code generation, and optimization tasks."
+      },
+      {
+        "title": "Human-Centered Results",
+        "description": "Every AI-generated output is reviewed, refined, and validated to ensure it meets user needs and quality standards."
+      }
+    ]
+  },
+  "benefits": [
+    {
+      "icon": "⚡",
+      "title": "Faster Iteration",
+      "description": "AI-assisted exploration allows for rapid prototyping and testing of multiple design directions."
+    },
+    {
+      "icon": "🎯",
+      "title": "Higher Quality",
+      "description": "More time for refinement and optimization leads to better user experiences and cleaner code."
+    },
+    {
+      "icon": "🔄",
+      "title": "Continuous Learning",
+      "description": "Each project incorporates lessons learned and new AI capabilities for improved outcomes."
+    },
+    {
+      "icon": "🚀",
+      "title": "Scalable Solutions",
+      "description": "Efficient workflows enable handling of complex projects while maintaining attention to detail."
+    }
+  ],
+  "tools": {
+    "design": [
+      "Figma for UI design and prototyping",
+      "AI-powered layout generation",
+      "Design system automation"
+    ],
+    "development": [
+      "AI-assisted code generation",
+      "Automated testing frameworks",
+      "Performance optimization tools"
+    ],
+    "workflow": [
+      "Version control with Git",
+      "CI/CD pipeline automation",
+      "Project management integration"
+    ]
+  }
+}

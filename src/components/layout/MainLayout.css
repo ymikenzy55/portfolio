@@ -1,0 +1,18 @@
+.main-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: white;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.main-content {
+  padding-top: 120px; /* Account for fixed navigation */
+  min-height: 100vh;
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 767px) {
+  .main-content {
+    padding-top: 100px;
+  }
+}

@@ -1,0 +1,103 @@
+.animated-text-test {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-primary);
+}
+
+.animated-text-test h1 {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-accent);
+}
+
+.animated-text-test h2 {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+}
+
+.test-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.test-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.test-item .animated-text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.staggered-headlines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.headline-large {
+  font-size: 3rem !important;
+  font-weight: var(--font-weight-bold) !important;
+  line-height: 1.2 !important;
+  color: var(--color-accent) !important;
+}
+
+.subtitle {
+  font-size: 1.25rem !important;
+  line-height: 1.6 !important;
+  color: var(--color-text-secondary) !important;
+  max-width: 600px;
+}
+
+.custom-style {
+  font-size: 1.5rem !important;
+  font-weight: var(--font-weight-semibold) !important;
+  color: var(--color-accent) !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .animated-text-test {
+    padding: 1rem;
+  }
+  
+  .animated-text-test h1 {
+    font-size: 2rem;
+  }
+  
+  .headline-large {
+    font-size: 2rem !important;
+  }
+  
+  .staggered-headlines {
+    gap: 0.25rem;
+  }
+}
+
+/* Animation performance optimization */
+.animated-text-test .animated-text {
+  will-change: transform, opacity, clip-path;
+}
+
+/* Focus states for accessibility */
+.test-item:focus-within {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

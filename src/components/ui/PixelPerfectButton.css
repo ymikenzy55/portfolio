@@ -1,0 +1,89 @@
+.pixel-perfect-button {
+  border: none;
+  border-radius: var(--radius-md); /* 8px */
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  outline: none;
+  white-space: nowrap;
+}
+
+/* Sizes */
+.pixel-perfect-button.small {
+  height: 32px;
+  padding: 0 var(--spacing-xs); /* 12px */
+  font-size: var(--font-size-sm); /* 14px */
+}
+
+.pixel-perfect-button.medium {
+  height: 40px;
+  padding: 0 var(--spacing-sm); /* 16px */
+  font-size: var(--font-size-base); /* 16px */
+}
+
+.pixel-perfect-button.large {
+  height: 48px;
+  padding: 0 var(--spacing-md); /* 24px */
+  font-size: var(--font-size-lg); /* 18px */
+}
+
+/* Variants */
+.pixel-perfect-button.primary {
+  background: var(--glass-bg);
+  color: var(--color-text-primary);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.pixel-perfect-button.secondary {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--color-text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pixel-perfect-button.ghost {
+  background: transparent;
+  color: var(--color-text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover states */
+.pixel-perfect-button:hover:not(:disabled) {
+  transform: scale(1.02);
+}
+
+.pixel-perfect-button.primary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.pixel-perfect-button.secondary:hover:not(:disabled) {
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pixel-perfect-button.ghost:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text-primary);
+}
+
+/* Press state */
+.pixel-perfect-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Disabled state */
+.pixel-perfect-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}

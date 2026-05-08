@@ -1,0 +1,615 @@
+.process-page {
+  position: relative;
+}
+
+/* Dark Hero Section */
+.process-hero-dark {
+  background: #0a0a0a;
+  padding: 120px 24px 80px;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.process-hero-dark .section-title {
+  font-size: 96px !important;
+  font-weight: 700 !important;
+  margin: 0 0 32px 0 !important;
+  color: #ffffff !important;
+  display: block !important;
+  position: relative;
+  z-index: 10;
+  line-height: 1.1 !important;
+  letter-spacing: -0.01em !important;
+  width: 100%;
+}
+
+.process-hero-dark .section-subtitle {
+  font-size: 24px !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  max-width: 800px;
+  margin: 0 auto !important;
+  line-height: 1.6 !important;
+  display: block !important;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .process-hero-dark .section-title {
+    font-size: 72px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-hero-dark .section-title {
+    font-size: 48px !important;
+  }
+  
+  .process-hero-dark .section-subtitle {
+    font-size: 18px !important;
+  }
+}
+
+/* Light Content Section */
+.process-content-light {
+  background: #f5f5f5;
+  padding: 80px 24px;
+  position: relative;
+}
+
+/* Creative Workflow Layout */
+.workflow-creative {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  gap: 40px;
+  margin-bottom: 120px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.workflow-column {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.step-card-creative {
+  padding: 32px;
+  position: relative;
+  transition: all 0.4s ease;
+  clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 100%);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.step-card-creative::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.1) 100%);
+  transform: translateY(100%);
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.step-card-creative:hover::after {
+  transform: translateY(0);
+}
+
+.step-number-creative,
+.step-content-creative {
+  position: relative;
+  z-index: 1;
+}
+
+.step-card-creative.offset-right {
+  transform: translateX(40px);
+}
+
+.step-card-creative.offset-left {
+  transform: translateX(-40px);
+}
+
+.step-card-creative.ai-enhanced {
+  border: 1px solid rgba(100, 200, 255, 0.3);
+  background: rgba(100, 200, 255, 0.03);
+}
+
+.step-card-creative:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.step-card-creative.offset-right:hover {
+  transform: translateX(40px) translateY(-8px) scale(1.02);
+}
+
+.step-card-creative.offset-left:hover {
+  transform: translateX(-40px) translateY(-8px) scale(1.02);
+}
+
+.step-number-creative {
+  position: absolute;
+  top: -16px;
+  left: 32px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.step-number-creative::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #000000;
+  transition: height 0.5s ease;
+  z-index: -1;
+}
+
+.step-card-creative:hover .step-number-creative::before {
+  height: 100%;
+}
+
+.step-card-creative:hover .step-number-creative {
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.step-card-creative.ai-enhanced .step-number-creative {
+  background: rgba(100, 200, 255, 0.15);
+  border-color: rgba(100, 200, 255, 0.3);
+  color: #64c8ff;
+}
+
+.step-card-creative.ai-enhanced .step-number-creative::before {
+  background: #64c8ff;
+}
+
+.step-card-creative.ai-enhanced:hover .step-number-creative {
+  color: #000000;
+  border-color: #64c8ff;
+}
+
+.step-content-creative h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #000000;
+}
+
+.ai-badge-creative {
+  display: inline-block;
+  background: rgba(100, 200, 255, 0.15);
+  color: #64c8ff;
+  padding: 4px 12px;
+  clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+  border-radius: 0;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-badge-creative::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #64c8ff;
+  transition: width 0.5s ease;
+  z-index: -1;
+}
+
+.step-card-creative:hover .ai-badge-creative::before {
+  width: 100%;
+}
+
+.step-card-creative:hover .ai-badge-creative {
+  color: #000000;
+}
+
+.step-content-creative p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Connecting Line */
+.workflow-connector-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0;
+  position: relative;
+}
+
+.workflow-connector-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.1)
+  );
+  transform: translateX(-50%);
+}
+
+.connector-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* Philosophy Feature */
+.philosophy-feature {
+  margin-bottom: 120px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.philosophy-card-large {
+  padding: 64px 48px;
+  text-align: center;
+  clip-path: polygon(2% 0%, 100% 0%, 98% 100%, 0% 100%);
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.philosophy-card-large::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.08) 100%);
+  transform: translateY(100%);
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.philosophy-card-large:hover::before {
+  transform: translateY(0);
+}
+
+.philosophy-icon,
+.philosophy-card-large h2,
+.philosophy-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.philosophy-icon {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.philosophy-card-large h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 48px 0;
+  color: #000000;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.philosophy-point {
+  text-align: left;
+}
+
+.philosophy-point h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #000000;
+}
+
+.philosophy-point p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Benefits Asymmetric Grid */
+.benefits-asymmetric {
+  margin-bottom: 80px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.benefits-asymmetric h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 48px 0;
+  color: #000000;
+  text-align: center;
+}
+
+.benefits-grid-creative {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 24px;
+}
+
+.benefit-card-large {
+  padding: 40px;
+  clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 100%);
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-card-large::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.08) 100%);
+  transform: translateY(100%);
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.benefit-card-large:hover::before {
+  transform: translateY(0);
+}
+
+.benefit-card-large h3,
+.benefit-card-large p {
+  position: relative;
+  z-index: 1;
+}
+
+.benefit-card-small {
+  padding: 32px;
+  clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-card-small::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.08) 100%);
+  transform: translateY(100%);
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.benefit-card-small:hover::before {
+  transform: translateY(0);
+}
+
+.benefit-card-small h3,
+.benefit-card-small p {
+  position: relative;
+  z-index: 1;
+}
+
+.benefit-card-large:first-child {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.benefit-card-small:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.benefit-card-small:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.benefit-card-large:last-child {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.benefit-card-large h3,
+.benefit-card-small h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: #000000;
+}
+
+.benefit-card-large p,
+.benefit-card-small p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .process-hero-dark {
+    padding: 80px 16px 60px;
+  }
+
+  .process-content-light {
+    padding: 60px 16px;
+  }
+
+  .workflow-creative {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+  }
+
+  .workflow-connector-line {
+    display: none;
+  }
+
+  .workflow-column {
+    gap: 48px;
+  }
+
+  .step-card-creative.offset-right,
+  .step-card-creative.offset-left {
+    transform: none;
+  }
+
+  .step-card-creative:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+
+  .step-card-creative {
+    padding: 24px;
+  }
+
+  .step-number-creative {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .step-content-creative h3 {
+    font-size: 20px;
+  }
+
+  .philosophy-feature {
+    margin-bottom: 80px;
+  }
+
+  .philosophy-card-large {
+    padding: 40px 24px;
+  }
+
+  .philosophy-card-large h2 {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .benefits-asymmetric {
+    margin-bottom: 60px;
+  }
+
+  .benefits-asymmetric h2 {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .benefits-grid-creative {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .benefit-card-large:first-child,
+  .benefit-card-small:nth-child(2),
+  .benefit-card-small:nth-child(3),
+  .benefit-card-large:last-child {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .benefit-card-large,
+  .benefit-card-small {
+    padding: 24px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .workflow-creative {
+    gap: 32px;
+  }
+
+  .workflow-column {
+    gap: 60px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .benefits-grid-creative {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.workflow-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}

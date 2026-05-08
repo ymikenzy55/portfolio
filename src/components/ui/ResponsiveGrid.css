@@ -1,0 +1,26 @@
+.responsive-grid {
+  display: grid;
+  gap: var(--grid-gap);
+  width: 100%;
+}
+
+/* Mobile: < 768px */
+@media (max-width: 767px) {
+  .responsive-grid {
+    grid-template-columns: repeat(var(--mobile-columns), 1fr);
+  }
+}
+
+/* Tablet: 768px - 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .responsive-grid {
+    grid-template-columns: repeat(var(--tablet-columns), 1fr);
+  }
+}
+
+/* Desktop: > 1024px */
+@media (min-width: 1025px) {
+  .responsive-grid {
+    grid-template-columns: repeat(var(--desktop-columns), 1fr);
+  }
+}

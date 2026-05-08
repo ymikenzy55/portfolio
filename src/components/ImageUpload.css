@@ -1,0 +1,103 @@
+.image-upload-container {
+  margin-bottom: 20px;
+}
+
+.image-upload-label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.image-upload-box {
+  display: block;
+  width: 100%;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.image-upload-box:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.upload-placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.upload-placeholder svg {
+  margin: 0 auto 16px;
+  opacity: 0.6;
+}
+
+.upload-placeholder p {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.upload-placeholder span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.upload-spinner {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.image-preview-container {
+  position: relative;
+}
+
+.image-preview {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.image-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.btn-change,
+.btn-remove {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-change {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+}
+
+.btn-change:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-remove {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.btn-remove:hover {
+  background: rgba(255, 0, 0, 0.2);
+}

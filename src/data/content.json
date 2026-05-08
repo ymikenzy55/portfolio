@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "headline": "Full-Stack Developer & Designer",
+    "tagline": "Creating complete digital experiences with clean UX, reliable backend, and AI-enhanced workflows",
+    "aiWorkflowMention": "Leveraging AI tools to enhance human creativity and efficiency"
+  },
+  "socialLinks": {
+    "email": "contact@example.com",
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username",
+    "twitter": "https://twitter.com/username"
+  },
+  "resumeLink": "/resume.pdf",
+  "about": {
+    "shortBio": "Full-stack developer with expertise in React, Node.js, and modern web technologies. I combine technical skills with design thinking to create exceptional user experiences.",
+    "approach": "I believe in human-centered design backed by solid technical implementation. My workflow integrates AI tools strategically to enhance creativity and efficiency while maintaining the human touch that makes great products.",
+    "experience": "3+ years of experience building web applications, from concept to deployment. Specialized in React ecosystems, RESTful APIs, and database design."
+  },
+  "contact": {
+    "responseTime": "I typically respond to messages within 24-48 hours. For urgent inquiries, please mention it in your message.",
+    "availability": "Currently available for new projects and opportunities."
+  }
+}

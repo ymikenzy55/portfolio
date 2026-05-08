@@ -1,0 +1,527 @@
+.recent-works-page {
+  min-height: 100vh;
+}
+
+.works-hero-dark {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-header-works h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section-header-works p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.works-content-light {
+  background: #f5f5f5;
+  padding: 4rem 2rem;
+  position: relative;
+  min-height: 60vh;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #0a0a0a;
+  margin-bottom: 3rem;
+}
+
+/* Filter Tabs */
+.works-filters {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.filter-tab {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.filter-tab:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #0a0a0a;
+}
+
+.filter-tab.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Featured Work */
+.featured-work-section {
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+}
+
+.featured-work-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.featured-work-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.featured-work-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.featured-work-placeholder {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  border-radius: 12px;
+}
+
+.featured-work-info h2 {
+  font-size: 2.5rem;
+  color: #0a0a0a;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.work-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.client-name {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.industry-tag {
+  background: rgba(0, 0, 0, 0.1);
+  color: #0a0a0a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.completion-date {
+  background: rgba(0, 0, 0, 0.1);
+  color: #0a0a0a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.work-description {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.work-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tech-badge {
+  background: rgba(0, 0, 0, 0.1);
+  color: #0a0a0a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.work-results {
+  background: rgba(102, 126, 234, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.work-results h4 {
+  color: #0a0a0a;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.work-results p {
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Recent Works Grid */
+.recent-works-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.work-card {
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+.work-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.work-image-placeholder {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.1rem;
+}
+
+.work-card-content {
+  padding: 1.5rem;
+}
+
+.work-card-content h3 {
+  font-size: 1.4rem;
+  color: #0a0a0a;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.work-card-content .work-description {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.work-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.work-tech-tags span {
+  background: rgba(0, 0, 0, 0.1);
+  color: #0a0a0a;
+  padding: 0.3rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.work-tech-tags .more {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+/* Modal */
+.work-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.work-modal-content {
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #0a0a0a;
+}
+
+.modal-header h2 {
+  font-size: 2rem;
+  color: #0a0a0a;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.modal-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-section h4 {
+  color: #0a0a0a;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.modal-section p {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.modal-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.detail-item {
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5;
+}
+
+.detail-item strong {
+  color: #0a0a0a;
+  margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .works-hero-dark {
+    padding: 60px 16px 40px;
+  }
+
+  .section-header-works h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-header-works p {
+    font-size: 1rem;
+    padding: 0 8px;
+  }
+
+  .works-content-light {
+    padding: 40px 16px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.4rem;
+  }
+
+  .filter-tab {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .featured-work-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .featured-work-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .work-description {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .work-technologies {
+    margin-bottom: 1.5rem;
+  }
+
+  .work-results {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .work-card-content {
+    padding: 1.2rem;
+  }
+
+  .work-card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .work-card-content .work-description {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .work-tech-tags {
+    gap: 0.3rem;
+  }
+
+  .work-tech-tags span {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .work-modal-overlay {
+    padding: 1rem;
+  }
+
+  .work-modal-content {
+    margin: 0;
+    padding: 1.5rem;
+    max-height: 85vh;
+  }
+
+  .modal-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-sections {
+    gap: 1.5rem;
+  }
+
+  .modal-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .modal-section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .project-details {
+    gap: 0.6rem;
+  }
+
+  .detail-item {
+    font-size: 0.9rem;
+  }
+
+  .modal-tech-list {
+    gap: 0.4rem;
+  }
+
+  .tech-badge {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}

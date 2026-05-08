@@ -1,0 +1,69 @@
+{
+  "projects": [
+    {
+      "id": "ecommerce-platform",
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution with modern UI and robust backend",
+      "problem": "A growing retail business needed a custom e-commerce platform that could handle high traffic, provide excellent user experience, and integrate with their existing inventory management system.",
+      "solution": "Built a full-stack solution using React for the frontend with a responsive, accessible design system. Implemented Node.js/Express backend with MongoDB for scalable data management. Added features like real-time inventory updates, secure payment processing, and admin dashboard for order management.",
+      "outcome": "Delivered a platform that increased online sales by 150% in the first quarter. Page load times improved by 60% compared to their previous solution. The admin dashboard reduced order processing time by 40%.",
+      "technologies": ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Stripe API", "JWT Authentication"],
+      "aiWorkflow": "Used AI tools for initial layout exploration and component generation, which accelerated the design phase by 30%. AI-assisted code review helped identify potential security vulnerabilities early in development.",
+      "previewImage": "/images/projects/ecommerce-preview.jpg",
+      "liveLink": "https://demo-ecommerce.example.com",
+      "repoLink": "https://github.com/username/ecommerce-platform"
+    },
+    {
+      "id": "task-management-app",
+      "title": "Task Management Application",
+      "description": "Collaborative project management tool with real-time updates",
+      "problem": "A remote team needed a custom task management solution that could handle complex project workflows, provide real-time collaboration features, and integrate with their existing tools.",
+      "solution": "Developed a React-based application with real-time WebSocket connections for live updates. Implemented drag-and-drop task boards, team collaboration features, and integration with popular tools like Slack and Google Calendar. Used MongoDB for flexible data modeling of projects and tasks.",
+      "outcome": "Team productivity increased by 35% with improved task visibility and collaboration. The real-time features reduced meeting time by 25% as team members could track progress instantly.",
+      "technologies": ["React", "TypeScript", "Socket.io", "Node.js", "Express", "MongoDB", "JWT", "Drag & Drop API"],
+      "aiWorkflow": "AI-powered code generation helped create boilerplate components and API endpoints, reducing development time by 25%. Used AI for generating test cases and documentation.",
+      "previewImage": "/images/projects/taskmanager-preview.jpg",
+      "liveLink": "https://demo-taskmanager.example.com",
+      "repoLink": "https://github.com/username/task-management"
+    },
+    {
+      "id": "portfolio-website",
+      "title": "Portfolio Website",
+      "description": "Dual-audience portfolio with liquid glass UI and AI-enhanced workflow",
+      "problem": "Needed a portfolio website that could effectively serve both potential clients and recruiters with different content focuses, while showcasing modern design skills and AI integration capabilities.",
+      "solution": "Created a dual-audience portfolio with separate content paths for clients (project focus) and recruiters (skills focus). Implemented a liquid glass UI design system with professional animations. Built with React and TypeScript for maintainability, with plans for Node.js backend integration.",
+      "outcome": "Successfully demonstrates full-stack capabilities and modern design skills. The dual-audience approach provides targeted experiences for different visitor types, improving engagement and conversion rates.",
+      "technologies": ["React", "TypeScript", "CSS3", "Framer Motion", "Vite", "Responsive Design"],
+      "aiWorkflow": "AI tools were used for layout exploration, component generation, and content optimization. The development process showcases how AI can enhance human creativity rather than replace it.",
+      "previewImage": "/images/projects/portfolio-preview.jpg",
+      "liveLink": "https://portfolio.example.com",
+      "repoLink": "https://github.com/username/portfolio-website"
+    },
+    {
+      "id": "analytics-dashboard",
+      "title": "Analytics Dashboard",
+      "description": "Real-time data visualization platform for business intelligence",
+      "problem": "A growing startup needed a custom analytics dashboard to visualize user behavior, sales metrics, and operational data in real-time to make data-driven decisions.",
+      "solution": "Built a comprehensive dashboard using React with Chart.js for data visualization. Implemented real-time data streaming with WebSockets and created a flexible widget system. The backend processes large datasets efficiently and provides RESTful APIs for data access.",
+      "outcome": "Enabled data-driven decision making that improved conversion rates by 20%. Real-time insights helped identify and resolve operational issues 50% faster.",
+      "technologies": ["React", "Chart.js", "D3.js", "Node.js", "Express", "MongoDB", "WebSockets", "Redis"],
+      "aiWorkflow": "AI-assisted data analysis helped identify key metrics and visualization patterns. Used machine learning algorithms for predictive analytics and anomaly detection.",
+      "previewImage": "/images/projects/analytics-preview.jpg",
+      "liveLink": "https://demo-analytics.example.com",
+      "repoLink": "https://github.com/username/analytics-dashboard"
+    },
+    {
+      "id": "booking-system",
+      "title": "Appointment Booking System",
+      "description": "Automated scheduling platform for service-based businesses",
+      "problem": "A healthcare practice needed an automated booking system to reduce administrative overhead, minimize scheduling conflicts, and provide patients with 24/7 booking capabilities.",
+      "solution": "Developed a comprehensive booking system with calendar integration, automated reminders, and conflict resolution. Implemented role-based access for staff and patients, with features like recurring appointments and waitlist management.",
+      "outcome": "Reduced administrative time by 60% and eliminated double-bookings. Patient satisfaction increased due to convenient online booking and automated reminders.",
+      "technologies": ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Calendar APIs", "Email Integration"],
+      "aiWorkflow": "AI algorithms optimize scheduling by predicting no-shows and suggesting optimal appointment times. Natural language processing helps categorize appointment types automatically.",
+      "previewImage": "/images/projects/booking-preview.jpg",
+      "liveLink": "https://demo-booking.example.com",
+      "repoLink": "https://github.com/username/booking-system"
+    }
+  ]
+}

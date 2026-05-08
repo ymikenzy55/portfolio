@@ -1,0 +1,18 @@
+.section-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider-svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100%;
+}
+
+/* Ensure no gaps on different screen sizes */
+.section-divider svg {
+  display: block;
+}

@@ -1,0 +1,89 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.5s ease;
+}
+
+.preloader.exiting {
+  animation: fadeOut 0.8s ease forwards;
+}
+
+.preloader-content {
+  text-align: center;
+  animation: slideUp 0.8s ease;
+}
+
+.preloader-title {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+  margin: 0 0 32px 0;
+  animation: clipReveal 1s ease;
+  clip-path: inset(0 0 0 0);
+}
+
+.preloader-spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes clipReveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .preloader-title {
+    font-size: 36px;
+  }
+}
