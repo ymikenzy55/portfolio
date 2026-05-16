@@ -27,12 +27,13 @@ dist-ssr
 .env
 .env.local
 .env.development
-# .env.production is tracked as a template (contains placeholder values)
+.env.production
 server/.env
 server/.env.local
 
-# Documentation files (allow deployment guides)
-# *.md files are now tracked for deployment documentation
+# Documentation files (exclude all .md files except README.md)
+*.md
+!README.md
 
 # Sensitive configuration
 *credentials*
