@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { LiquidGlassCard, TypewriterScroll, SectionDivider } from '../components/ui';
 import './GalleryPage.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
+const API_URL = import.meta.env['VITE_API_URL'] || 'http://localhost:5001/api';
 
 interface GalleryItem {
   _id: string;

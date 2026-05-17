@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { MainLayout } from './components/layout';
@@ -16,7 +16,7 @@ import {
   AdminDashboard,
   LoginPage
 } from './pages';
-import { Preloader, AudienceChoice } from './components/ui';
+import { Preloader } from './components/ui';
 import { LiquidGlassCardTest } from './components/test/LiquidGlassCardTest';
 import { PixelPerfectButtonTest } from './components/test/PixelPerfectButtonTest';
 import { AnimatedTextTest } from './components/test/AnimatedTextTest';

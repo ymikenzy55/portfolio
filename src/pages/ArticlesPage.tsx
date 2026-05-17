@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { LiquidGlassCard, PixelPerfectButton, DotMatrix, SectionDivider } from '../components/ui';
 import './ArticlesPage.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
+const API_URL = import.meta.env['VITE_API_URL'] || 'http://localhost:5001/api';
 
 interface Article {
   _id: string;

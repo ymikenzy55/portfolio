@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { LiquidGlassCard, DotMatrix, SectionDivider } from '../components/ui';
 import './ProcessPage.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
+const API_URL = import.meta.env['VITE_API_URL'] || 'http://localhost:5001/api';
 
 /**
  * ProcessPage component displaying workflow process
